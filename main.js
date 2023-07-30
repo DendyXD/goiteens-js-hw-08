@@ -36,7 +36,7 @@ const numbers1 = [1, 2, 3, 4, 5];
 
 let cycle1 = 0;
 
-while (cycle1 < 5) {
+while (cycle1 < numbers1.length) {
   result4.textContent += numbers1[cycle1] + " ";
   cycle1 += 1;
 }
@@ -49,7 +49,7 @@ const numbers2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 for (let i = 0; i < 10; i += 1) {
 
-  if (i === 6) {
+  if (i === 7 - 1) {
       continue
   } else {
     result5.textContent += numbers2[i] + " ";
@@ -64,7 +64,7 @@ const n = 8;
 
 let cycle2 = 1;
 
-while (cycle2 <= n - 1) {
+while (cycle2 < n) {
   result6.textContent += cycle2 + " ";
   cycle2 += 1;
 }
@@ -78,11 +78,10 @@ let cycle3 = 1;
 while (cycle3 <= 20) {
 
   if (cycle3 % 3 === 0) {
-    result7.textContent += cycle3 + " ";
-  } else {
     cycle3 += 1;
     continue
   }
 
+  result7.textContent += cycle3 + " ";
   cycle3 += 1;
 }
